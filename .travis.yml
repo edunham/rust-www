@@ -6,7 +6,6 @@ script: jekyll build
 branches:
   only:
   - master
-  - gh-pages
 deploy:
   provider: s3
   access_key_id: AKIAIR4V3CAS724EMHFQ
@@ -16,4 +15,4 @@ deploy:
   acl: public_read
   on:
     repo: edunham/rust-www
-    branch: gh-pages
+    branch: master
